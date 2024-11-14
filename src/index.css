@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+}
+
+:root {
+  --primary-color: #ec315a;
+  --secondary-color: #441d81;
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --border-radius: 4px;
+}
+
+.form {
+  width: 90%;
+  max-width: 400px;
+}
+
+.formSubHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+  text-align: center;
+  letter-spacing: 0.07rem;
+  font-weight: 400;
+  gap: 0.2rem;
+  padding: 2rem 0rem 1.2rem 0rem;
+}
+
+.formSubHeader .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--secondary-color);
+  margin: 0 0.6rem;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem 0rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+/* INPUT-FÄLT */
+
+.inputContainer {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.inputLabel {
+  position: absolute;
+  top: -6px;
+  left: 15px;
+  background-color: #fff4f1;
+  padding: 0 5px;
+  font-size: 0.7rem;
+  color: var(--secondary-color);
+}
+
+.inputLabel:focus {
+  color: var(--primary-color);
+}
+
+.date,
+.time,
+.persons,
+.lanes,
+.shoeInfo,
+.confirmTime,
+.confirmWho,
+.confirmLane,
+.bookingNumber {
+  width: 100%;
+  padding: 0.7rem 0rem;
+  font-size: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  text-indent: 10px;
+  outline: none;
+}
+
+.date:focus,
+.time:focus,
+.persons:focus,
+.lanes:focus,
+.shoeInfo:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.date:focus + .inputLabel,
+.time:focus + .inputLabel,
+.persons:focus + .inputLabel,
+.lanes:focus + .inputLabel,
+.shoeInfo:focus + .inputLabel {
+  color: var(--primary-color);
+}
