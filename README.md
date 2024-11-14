@@ -7,7 +7,9 @@ Detta projekt är en bokningsapplikation för en fiktiv bowlinghall där använd
 - **Frontend:** React och TypeScript
 - **Backend-integration:** REST API med hantering av API-nyckel i en .env-fil
 
-## För att köra projektet lokalt
+<br>
+
+##  För att köra projektet lokalt
 Klona repot 
 ```
 git clone https://github.com/MaRos10/BowlingApp.git
